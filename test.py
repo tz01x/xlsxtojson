@@ -6,8 +6,8 @@
 
 
 import json
-f=open('Sheet1.json')
-with open('Sheet1.json') as jsonfile:
-	data=json.load(jsonfile)
-	for p in data:
-		print(p["First Name"])
+with open('Sheet1.json') as f:
+	with open('Sheet1.json') as jsonfile:
+		data=json.load(jsonfile)
+		for p in data:
+			print(p["First Name"])
